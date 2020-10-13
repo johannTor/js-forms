@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="site-header">
+        <h1>Contact List</h1>
+    </header>
+    <main>
+        <div class="contact-list-container">
+            <h1>Contacts</h1>
+            <ul class="the-list">
+            </ul>
+            <button onclick="showAddContactBox()">+</button>
+        </div>
+        <div class="new-contact">
+            <h1 id="new-contact-header">Add a new contact</h1>
+            <form name="contactForm" id="new-contact-form">
+                <label id="name-label" for="name">Please provide a name</label>
+                <input type="text" name="name" id="new-name" placeholder="Name*" required>
+                <label id="email-label" for="email">Please provide an email</label>
+                <label id="used-email-label" for="email">Email already in use</label>
+                <input type="email" name="email" id="new-email" placeholder="Email*" required>
+                <label id="phone-label" for="phone">Please provide a phone number</label>
+                <input type="tel" id="new-phone" name="phone" placeholder="Phone*" required>
+                <label id="age-label" for="age">Please provide a valid age</label>
+                <input type="number" id="new-age" name="age" min="16" max="150" placeholder="Age*" required>
+                <input type="submit" id="add-button" value="Add Contact">
+            </form>
+        </div>
+        <div class="contact-info">
+        </div>
+        <div class="contact-edit">
+        </div>
+    </main>
+    <script src="styleFunctions.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
